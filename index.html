@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <nav>
+      <img src="images/logo.png" class="navimg" alt="" />
+    </nav>
+    <header class="heroContainer">
+      <h1 class="heroTitle">¿Qué trae la nueva Nintendo Switch 2?</h1>
+      <h4 class="heroSubtitle">
+        Resgistrate y recibí toda la información en un resumen descargable con
+        filtraciones, análisis y predicciones.
+      </h4>
+      <img class="heroImg" src="images/nintendo.png" alt="" />
+      <button class="cta heroBtn" id="btn-abrir-modal">REGISTRARSE</button>
+    </header>
+    
+    <dialog class="modal" id="modal">
+      <div class="modalCont">
+        <button id="btn-cerrar-modal" class="modalBtnCerrar">X</button>
+        <h2 class="modalTitle titulo2">Suscribite y recibí toda la información</h2>
+        <p class="modalSubtitle subtitulo1">Dejanos tu mail, te mandamos el PDF completo y te mantenemos al tanto de todo.</p>
+        <form action="" class="modalForm">
+          <input type="text" name="nombre" id="nombre" class="modalInput" placeholder="Ingresá tu nombre...">
+          <input type="email" name="email" id="email" class="modalInput" placeholder="Ingresá tu email...">
+          <button type="submit" id="btnEnviar" class="modalBtn">ENVIAR</button>
+        </form>
+      </div>
+    </dialog>
+
+    <section class="infoContainer">   
+      <div class="infoP1">
+        <h3 class="titulo2 infoP1title">Lo nuevo de la Nintendo Switch 2</h3>
+        <p class="parrafo infoP1text">
+          La Nintendo Switch 2 llega con una nueva pantalla OLED de mayor tamaño
+          y resolución, un procesador ultra potente para gráficos de última
+          generación y Joy-Con mejorados que ofrecen mayor ergonomía y
+          precisión. Además, mantiene compatibilidad total con los juegos de la
+          Switch original e incorpora nuevos modos de juego como la Realidad
+          Virtual y la Realidad Aumentada, llevando la experiencia a un nivel
+          completamente nuevo.
+        </p>
+        <img src="images/consola.png" alt="" class="infoP1img" />
+      </div>
+      <div class="infoP2">
+        <h3 class="titulo2 infoP2title">
+          Resolucion y fluidez como nunca antes
+        </h3>
+        <p class="parrafo infoP2text">
+          Deja que tus juegos cobren vida en una amplia pantalla de 1080p o
+          conecta la consola al televisor y disfruta la resolución 4K*. La
+          compatibilidad con HDR y la frecuencia de fotogramas de hasta 120 fps
+          te permiten disfrutar colores vibrantes, mayor claridad y una
+          experiencia de juego fluida.
+        </p>
+        <video src="images/videomariokart.mp4" alt="" class="infoP2img" autoplay loop muted playsinline/>
+      </div>
+    </section>
+    <section class="gamechatCont">
+      <h2 class="titulo3 gamechatTitle">Te presentamos Gamechat</h2>
+      <img src="images/nintendo-switch-2-gamechat.jpg" alt="" class="gamechatImg" />
+      <div class="gamechatCont2">
+        <h4 class="gamechatSubtitle subtitulo2">
+          ¡Comunícate con tus amigos a cualquier hora utilizando el botón C!
+        </h4>
+        <p class="gamechatP parrafo">
+          Comparte tu pantalla de juego mientras conversas para mostrarles tus
+          partidas. Y si quieres darles un toque más personal a tus
+          conversaciones, comunícate cara a cara a través de la cámara de
+          Nintendo Switch 2 u otra cámara USB-C® compatible (se venden por
+          separado).
+        </p>
+        <img src="images/gamechat2.png" alt="" class="gamechatImg1"/>
+        <p class="gamechatP2 parrafo">
+          Conecta una cámara USB-C® compatible, como la cámara de Nintendo
+          Switch 2 (se vende por separado), para iniciar el chat de video y ver
+          el rostro de tus amigos mientras juegan. Hasta cuatro personas pueden
+          reunirse en un chat de video al mismo tiempo.
+        </p>
+        <img src="images/camara.jpg" alt="" class="gamechatImg2"/>
+      </div>
+    </section>
+    <section class="cardSection">
+      <h2 class="cardTitle titulo2">Potencia, inmersión y espacio sin límites</h2>
+      <div class="cardCont">
+        <div class="card1Cont">
+          <img src="images/porcesador.jpg" alt="" class="card1Img"/>
+          <h4 class="card1Title">Rendimiento</h4>
+          <p class="card1P parrafo">
+            Los juegos en Nintendo Switch 2 pueden aprovechar las poderosas
+            mejoras a su capacidad de procesamiento, velocidad y desempeño de los
+            gráficos. Disfruta beneficios como fotogramas más fluidos, gráficos
+            más nítidos y mayor velocidad de carga que antes.
+          </p>
+        </div>
+        <div class="card1Cont">
+          <img src="images/sonido.png" alt="" class="card1Img"/>
+          <h4 class="card1Title">Sonido</h4>
+          <p class="card1P parrafo">
+            La calidad del sonido es más natural, clara y ofrece mejor balance.
+            Podrás percibir la diferencia, ya sea al jugar con los altavoces
+            integrados o con tus audífonos.
+          </p>
+        </div>
+        <div class="card1Cont">
+          <img src="images/almacenamiento.png" alt="" class="card1Img"/>
+          <h4 class="card1Title">Almacenamiento</h4>
+          <p class="card1P parrafo">
+            Nintendo Switch 2 incluye 256 GB de almacenamiento interno, 8 veces
+            más que la capacidad de Nintendo Switch, para guardar tus descargas de
+            juegos, datos de guardado y más. Además, la consola puede leer y
+            escribir datos a mayor velocidad.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="formSection">
+      <h2 class="formTitle titulo2">Recibí el resumen completo + novedades futuras</h2>
+      <h4 class="formSubtitle subtitulo1">
+        Dejanos tu mail, te mandamos el PDF completo y te mantenemos al tanto de todo.
+      </h4>
+      <form class="formCont">
+        <input class="formInput" type="text" name="nombre" id="nombre" placeholder="Ingresá tu nombre..." />
+        <input class="formInput" type="email" name="email" id="email" placeholder="Ingresá tu email..." />
+        <button type="submit" id="btnEnviar" class="modalBtn">ENVIAR</button>
+      </form>
+    </section>
+    <!--
+    <div class="sliderCont">
+      <div class="sliderTrack">
+        <div class="slide">
+          <img src="images/slide1.png" alt="" />
+        </div>
+        <div class="slide">
+          <img src="images/slide2.png" alt="" />
+        </div>
+        <div class="slide">
+          <img src="images/slide3.png" alt="" />
+        </div>
+        <div class="slide">
+          <img src="images/slide4.png" alt="" />
+        </div>
+      </div>
+    </div>
+    -->
+    <footer>
+      <div class="footerCont">
+        <img src="images/logo.png" alt="" class="footerLogo"/>
+        <div class="footerContIcon">
+          <img src="images/facebook.png" alt="" class="footerIcon"/>
+          <img src="images/youtube.png" alt="" class="footerIcon"/>
+          <img src="images/tiktok.png" alt="" class="footerIcon"/>
+          <img src="images/twiiter.png" alt="" class="footerIcon"/>
+          <img src="images/Ig.png" alt="" class="footerIcon"/>
+        </div>
+      </div>
+      <div class="footer2">
+        <h5 class="footer2P"">2025 Derechos reservados BUSCA TODO.COM S. DE R.L. DE C.V.</h5>
+      </div>
+    </footer>
+    <script src="./script.js"></script>
+  </body>
+</html>
