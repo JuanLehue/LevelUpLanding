@@ -32,6 +32,13 @@
     margin: 20px 200px;
 }
 
+.cardTitle{
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 60px;
+    font-weight: 100;
+    line-height: 60px;
+}
+
 .card1Cont{
     border: solid 1px #e5e5e5;
     border-radius: 20px;
@@ -58,6 +65,27 @@
 
 .card1P{
     padding: 0px 20px 20px 20px;
+    font-family: "Public Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 100;
+}
+
+@media (max-width: 500px) {
+
+    .cardCont{
+        flex-direction: column;
+    }
+
+    .cardTitle{
+        font-size: 50px;
+        line-height: 50px;
+        text-align: center;
+        width: 80%;
+    }
+
+    .card1Cont{
+        margin: 20px 0px;
+    }   
 }
 
 
@@ -73,13 +101,20 @@
 
 .formTitle{
     width: 800px;
-    text-align: center
+    text-align: center;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 60px;
+    font-weight: 100;
+    line-height: 60px;
 }   
 
 .formSubtitle{
     margin: 40px 0px 60px 0px;
     width: 600px;
     text-align: center;
+    font-family: "Public Sans", sans-serif;
+    font-size: 20px;
+    font-weight: 100;
 }
 
 .formCont{
@@ -114,6 +149,31 @@
 .formBtn:hover{
     cursor: pointer;
 }
+
+@media (max-width:500px) {
+    .formTitle{
+        font-size: 40px;
+        width: 80%;
+        line-height: 40px;
+    }
+
+    .formSubtitle{
+        font-size: 20px;
+        width: 90%;
+    }
+
+    .formCont{
+        width: 80%;
+    }
+
+    .formInput{
+        width: 100%;
+    }
+}
+
+
+
+
 
 footer{
     background-color: #797979;
@@ -154,6 +214,27 @@ footer{
     font-weight: 100;
 }
 
+@media (max-width:500px) {
+    footer{
+        height: 200px;
+    }
+
+    .footerCont{
+        padding-top: 120px;
+        margin: 0px 10px;
+    }
+
+    .footerLogo{
+        width: 150px;
+    }
+    .footerIcon{
+        width: 40px;
+        height: auto;
+    }
+}
+
+
+
 
 
 
@@ -162,6 +243,12 @@ footer{
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.gamechatTitle{
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 60px;
+    font-weight: 100;
 }
 
 .gamechatImg{
@@ -178,16 +265,25 @@ footer{
 }
 
 .gamechatSubtitle{
+    font-family: "Public Sans", sans-serif;
+    font-size: 28px;
+    font-weight: 500;
     grid-column-start: 1;
     grid-row-start: 1;
 }
 
 .gamechatP{
+    font-family: "Public Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 100;
     grid-column-start: 1;
     grid-row-start: 2;
 }
 
 .gamechatP2{
+    font-family: "Public Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 100;
     grid-column-start: 1;
     grid-row-start: 4;
     margin-top: 10px;
@@ -204,6 +300,48 @@ footer{
     padding: 50px 0px;
 }
 
+
+@media (max-width: 500px){
+
+    .gamechatTitle{
+        font-size: 40px;
+    }
+
+    .gamechatImg{
+        margin: 10px auto;
+        width: 90%;
+        height: auto;
+    }
+
+    .gamechatCont2{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+    }
+
+    .gamechatSubtitle{
+        font-size: 20px;
+        margin: 10px 0px;
+    }
+
+    .gamechatP{
+        font-size: 16px;
+    }
+
+    .gamechatImg1{
+        margin: 20px 0px;
+        width: 100%;
+    }
+
+    .gamechatP2{
+        margin-top: 0px;
+    } 
+
+    .gamechatImg2{
+        padding: 15px;
+    }
+
+}
 
 
 
@@ -250,7 +388,7 @@ footer{
 .heroImg{
     grid-column-start: 2;
     grid-row-start: 1;
-    grid-row-end: 5;
+    grid-row-end: 5;    
 
 }
 
@@ -259,44 +397,51 @@ footer{
 @media (max-width: 500px) {
 
     .heroContainer{
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        align-items: center;
+        margin: auto;
+        grid-template-columns: 400px;
+        grid-template-rows: repeat(4, auto);
+        justify-content: center;
+        margin-bottom: 80px;
     }
 
 
 
     .heroTitle{
-        font-size: 52px;
-        
+        font-size: 54px;
+        min-width: 0px;
+        max-width: 400px;
+        line-height: 50px;
+        margin-bottom: 20px;
+    }
+
+    .heroSubtitle{
+        grid-row-start: 2;
+        font-size: 18px;
+        width: 360px;
     }
 
     .heroImg{
-        width: 90%;
+        grid-column-start: 1;
+        grid-row-start: 3;
+        grid-row-end: 4;
+        width: 100%;
+        height: auto;
+        place-self: center;
+    }
+
+    .heroBtn{
+        grid-row-start: 4;
+        place-self: center;
     }
 
     .cta{
+        font-size: 24px;
         width: 205px;
-        height: 80px;
-        font-size: 30px;
+        height: auto;
+        padding: 12px;
     }
-
-
     
 }
-
-.cta{
-    width:316px;
-    height: 80px;
-    border-radius: 50px;
-    background-color: #F33535;
-    color: #ffffff;
-    font-family: "Bebas Neue", sans-serif;
-    font-size: 40px;
-    border: 0px;
-}
-
 
 
 
@@ -323,13 +468,21 @@ footer{
     grid-row-start: 1;
     width: 500px;
     height: auto;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 60px;
+    font-weight: 100;
+    line-height: 60px;
 }
+
 
 .infoP1text{
     grid-column-start: 2;
     grid-row-start: 2;
     width: 500px;
     max-height: 150px;
+    font-family: "Public Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 100;
 }
 
 .infoP1img{
@@ -354,6 +507,10 @@ footer{
     grid-row-start: 1;
     width: 500px;
     height: auto;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 60px;
+    font-weight: 100;
+    line-height: 60px;
 }
 
 .infoP2text{
@@ -361,6 +518,9 @@ footer{
     grid-row-start: 2;
     width: 500px;
     max-height: 150px;
+    font-family: "Public Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 100;
 }
 
 .infoP2img{
@@ -373,6 +533,73 @@ footer{
 
 }
 
+@media (max-width: 500px){
+
+    .infoP1{
+        margin: 50px 50px;
+        grid-template-columns: 400px;
+        grid-template-rows: repeat(3, auto);
+    }
+
+    .infoP1img{
+        grid-column-start: 1;  
+        grid-row-start: 2;
+        width: 100%;
+        margin-top: 20px;
+    }
+    
+    .infoP1title{
+        grid-column-start: 1;
+        grid-row-start: 1;
+        font-size: 40px;
+        width: 100%;
+        line-height: 40px;
+        text-align: center;
+    }
+
+    .infoP1text{
+        grid-column-start: 1;
+        grid-row-start: 3;
+        font-size: 16px;
+        width: 100%;
+        margin-top: 20px;
+    }
+    .infoP2{
+        grid-template-columns: 400px;
+        grid-template-rows: repeat(3, auto);
+    }
+
+    .infoP2img{
+        grid-column-start: 1;  
+        grid-row-start: 2;
+        width: 100%;
+        margin-top: 20px;
+    }
+    
+    .infoP2title{
+        grid-column-start: 1;
+        grid-row-start: 1;
+        font-size: 40px;
+        width: 100%;
+        line-height: 40px;
+        text-align: center;
+    }
+
+    .infoP2text{
+        grid-column-start: 1;
+        grid-row-start: 3;
+        font-size: 16px;
+        width: 100%;
+        margin-top: 20px;
+    }
+
+}
+
+
+
+
+
+
 .navimg{
     margin-top: 40px;
     margin-left: 24px;
@@ -382,7 +609,7 @@ footer{
 @media (max-width: 500px) {
     .navimg{
         width: 150px;
-        margin: 50px 0px 0px 50px;
+        margin: 25px 0px 0px 20px;
     }
     
     nav{
@@ -429,11 +656,18 @@ footer{
 .modalTitle{
     padding: 20px;
     text-align: center;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 60px;
+    font-weight: 100;
+    line-height: 60px;
 }
 
 .modalSubtitle{
     padding: 20px;
     text-align: center;
+    font-family: "Public Sans", sans-serif;
+    font-size: 20px;
+    font-weight: 100;
 }
 
 .modalForm{
@@ -470,6 +704,25 @@ footer{
 .modalBtn:hover{
     cursor: pointer;
 }
+
+
+@media (max-width:500px) {
+    #modal{
+        margin: 20px;
+    }
+
+    .modalCont{
+        width: 90%;
+    }
+
+    .modalTitle{
+        font-size: 40px;
+        line-height: 40px;
+    }
+}
+
+
+
 
 
 

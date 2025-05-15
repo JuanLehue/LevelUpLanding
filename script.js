@@ -27,4 +27,3 @@ function enviarFormulario(event){
 
 }
 
-console.log(input_name);
