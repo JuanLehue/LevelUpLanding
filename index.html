@@ -29,11 +29,19 @@
         <button id="btn-cerrar-modal" class="modalBtnCerrar">X</button>
         <h2 class="modalTitle">Suscribite y recibí toda la información</h2>
         <p class="modalSubtitle">Dejanos tu mail, te mandamos el PDF completo y te mantenemos al tanto de todo.</p>
-        <form action="" class="modalForm">
-          <input type="text" name="nombre" id="nombre" class="modalInput" placeholder="Ingresá tu nombre...">
-          <input type="email" name="email" id="email" class="modalInput" placeholder="Ingresá tu email...">
+        <form action="" class="modalForm" id="formulario">
+          <input type="text" name="nombre" id="nombre" class="modalInput" placeholder="Ingresá tu nombre..." required>
+          <input type="email" name="email" id="email" class="modalInput" placeholder="Ingresá tu email..." required>
           <button type="submit" id="btnEnviar" class="modalBtn">ENVIAR</button>
         </form>
+      </div>
+    </dialog>
+    <dialog id="respuesta">
+      <div  class="respuesta" >
+        <button id="btn-cerrar-modal2" class="modalBtnCerrar">X</button>
+        <h3 class="respuestaTitle">Suscripcion exitosa!</h3>
+        <p class="respuestaP">Muchas gracias <span id="nombreRespuesta">NOMBRE</span>, ya te enviaremos toda la información.</p>
+        <img class="respuestaImg" src="images/aprobado.png" alt="">
       </div>
     </dialog>
 
@@ -129,12 +137,11 @@
         Dejanos tu mail, te mandamos el PDF completo y te mantenemos al tanto de todo.
       </h4>
       <form class="formCont">
-        <input class="formInput" type="text" name="nombre" id="nombre" placeholder="Ingresá tu nombre..." />
-        <input class="formInput" type="email" name="email" id="email" placeholder="Ingresá tu email..." />
-        <button type="submit" id="btnEnviar" class="modalBtn">ENVIAR</button>
+        <input class="formInput" type="text" name="nombre" id="nombre2" placeholder="Ingresá tu nombre..." />
+        <input class="formInput" type="email" name="email" id="email2" placeholder="Ingresá tu email..." />
+        <button type="submit" id="btnEnviar2" class="modalBtn">ENVIAR</button>
       </form>
     </section>
-    <!--
     <div class="sliderCont">
       <div class="sliderTrack">
         <div class="slide">
@@ -149,9 +156,20 @@
         <div class="slide">
           <img src="images/slide4.png" alt="" />
         </div>
+        <div class="slide">
+          <img src="images/slide1.png" alt="" />
+        </div>
+        <div class="slide">
+          <img src="images/slide2.png" alt="" />
+        </div>
+        <div class="slide">
+          <img src="images/slide3.png" alt="" />
+        </div>
+        <div class="slide">
+          <img src="images/slide4.png" alt="" />
+        </div>
       </div>
     </div>
-    -->
     <footer>
       <div class="footerCont">
         <img src="images/logo.png" alt="" class="footerLogo"/>
