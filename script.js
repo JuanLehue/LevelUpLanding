@@ -5,13 +5,6 @@ const modal = document.querySelector("#modal");
 const respuesta = document.querySelector("#respuesta");
 const form = document.querySelector("#formulario");
 
-/*btnAbrirModal.addEventListener("click", ()=>{
-    respuesta.showModal();
-})
-
-btnCerrarModal.addEventListener("click", ()=>{
-    respuesta.close();
-})*/
 
 btnAbrirModal.addEventListener("click", ()=>{
     modal.showModal();
@@ -37,20 +30,6 @@ var placeholder_nombre = document.getElementById("nombreRespuesta");
 
 
 
-//input_submit.addEventListener("click", enviarFormulario)
-
-/*
-function enviarFormulario(event){
-    event.preventDefault();
-    
-    var name_value = input_name.value;
-    var email_value = input_email.value;
-
-    console.log(name_value);
-    console.log(email_value);
-
-}
-*/
 
 input_submit.addEventListener("click", confirmarForm)
 input_submit2.addEventListener("click", confirmarForm2)
@@ -71,6 +50,7 @@ function confirmarForm(event){
         input_email.value = '';
         modal.close();
         respuesta.showModal();
+        animate(".respuestaImg", { scale: 1 }, { ease: "circInOut", duration: 1 });
     }
 }
 
@@ -90,6 +70,7 @@ function confirmarForm2(event){
         input_email2.value = '';
         formulario.reset();
         respuesta.showModal();
+        animate(".respuestaImg", { scale: 1 }, { ease: "circInOut", duration: 1 });
     }
 }
 
@@ -100,4 +81,27 @@ function formLleno(name_value, email_value){
         return true
     }
 }
+
+
+
+
+
+
+
+import { animate, press } from "https://cdn.jsdelivr.net/npm/motion@12.12.0/+esm";
+
+press(".cta", (element) => {
+    animate(element, { scale: 0.8 }, { type: "spring", stiffness: 1000 })
+
+    return () =>
+        animate(element, { scale: 1 }, { type: "spring", stiffness: 500 })
+});
+
+press(".modalBtn", (element) => {
+    animate(element, { scale: 0.8 }, { type: "spring", stiffness: 1000 })
+    
+    return () =>
+        animate(element, { scale: 1 }, { type: "spring", stiffness: 500 })
+});
+
 
